@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Working well?</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="styles.css">
+  <!--JS-->
+  <script src="jsclock.js" defer></script>
+  <script src="list.js" defer></script>
+  <script src="saving.js" defer></script>
+  <script src="geoapi.js" defer></script>
+  <script src="background.js" defer></script>
+  <!--FONTAWESOME-->
+  <script src="https://kit.fontawesome.com/6478f529f2.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+  <header>
+    <!--CLOCK-->
+    <div class="js-date">
+      <span>0000.00.00</span>
+    </div>
+    <div class="js-clock">
+      <span>00:00</span>
+    </div>
+  </header>
+  <!---->
+  <div class="weather__container">
+    <div class="weather">
+      <!--<i class="fas fa-thermometer-half"></i>-->
+      <span class="js-weather"></span>
+      <span class="js-place"></span>
+    </div>
+  </div>
+  <!---->
+  <div class="namer">
+    <form class="js-form form">
+      <input type="text" placeholder="what is your name">
+    </form>
+    <h4 class="js-greet greet"></h4>
+  </div>
+  <!---->
+  <div class="lister">
+    <form class="js-toDoForm">
+      <input type="text" placeholder="Write a to do" />
+    </form>
+    <ul class="js-toDoList">
+    </ul>
+  </div>
+</body>
+
+</html>

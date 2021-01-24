@@ -1,0 +1,125 @@
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  margin : 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 1.3%;
+}
+header span{
+  color: white;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.weather__container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+}
+.weather span{
+  font-size: 2rem;
+  color: white;
+  line-height: 2.5rem;
+}
+.weather span:first-child{
+  font-size: 1.5rem;
+}
+.weather span:last-child{
+  position: relative;
+  right: 15px;
+}
+
+.namer{
+  margin-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.js-form input:focus{
+  cursor : pointer;
+}
+.js-greet{
+  color: white;
+  font-weight: 500;
+}
+.form,
+.greet{
+  display: none;
+}
+.showing{
+  display: block;
+}
+
+.js-toDoForm input{
+  font-size: 2rem;
+}
+
+.js-toDoForm input:focus{
+  cursor: pointer;
+}
+
+
+.lister{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2%;
+}
+.js-toDoList{
+  display: flex;
+  flex-direction: column;
+}
+.js-toDoList li{
+  list-style: none;
+  font-size: 3rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+}
+.js-toDoList button{
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+
+
+
+.bgimage{
+  position: fixed;
+  left: -33%;
+  height: 100%;
+  z-index: -999;
+  animation: fadeIn .3s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to{
+    opacity: .2;
+  }
+}
